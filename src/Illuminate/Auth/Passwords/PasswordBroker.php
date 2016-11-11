@@ -171,7 +171,7 @@ class PasswordBroker implements PasswordBrokerContract
             $credentials['password_confirmation'],
         ];
 
-        return $password === $confirm && mb_strlen($password) >= 6;
+        return $password === $confirm && mb_strlen($password) >= 6; // WTF this hardcore, if I need min 4 or 5, what to do?
     }
 
     /**
